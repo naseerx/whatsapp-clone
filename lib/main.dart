@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Whatsapp',
+      title: 'Flutter Whatsapp Clone',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
