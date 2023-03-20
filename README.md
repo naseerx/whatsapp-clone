@@ -6,6 +6,14 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
+
+## Screenshots
+<p float="left">
+  <img src="https://github.com/naseerx/whatsapp-clone/blob/master/ss/1.png" width = 250>
+  <img src="https://github.com/naseerx/whatsapp-clone/blob/master/ss/2.png" width = 250>
+</p>
+
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
