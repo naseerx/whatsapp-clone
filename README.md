@@ -11,6 +11,8 @@ This project is a starting point for a Flutter application.
 <p float="left">
   <img src="https://github.com/naseerx/whatsapp-clone/blob/master/ss/1.png" width = 250>
   <img src="https://github.com/naseerx/whatsapp-clone/blob/master/ss/2.png" width = 250>
+    <img src="https://github.com/naseerx/whatsapp-clone/blob/master/ss/3.png" width = 250>
+  <img src="https://github.com/naseerx/whatsapp-clone/blob/master/ss/4.png" width = 250>
 </p>
 
 
