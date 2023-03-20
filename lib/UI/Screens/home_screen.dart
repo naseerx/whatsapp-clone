@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/UI/Custom%20Widgets/app_bar.dart';
 import 'package:flutter_whatsapp_clone/UI/Screens/call_screen.dart';
 import 'package:flutter_whatsapp_clone/UI/Screens/status_screen.dart';
+import 'package:get/get.dart';
 
 import '../../Core/Models/users_model.dart';
 import '../../Core/Services/local_json_services.dart';
@@ -15,11 +16,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String searchQuery = '';
+
   void updateSearchQuery(String query) {
     setState(() {
       searchQuery = query;
     });
   }
+
   LocalJsonServices usersService = LocalJsonServices();
 
   @override
@@ -42,13 +45,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       itemCount: data.length,
                       itemBuilder: (context, index) {
                         var user = data[index];
-                        return ListTile(
-                          leading: CircleAvatar(
-                            backgroundImage: NetworkImage(user.image),
+                        return SizedBox(
+                          height: 90,
+                          child: ListTile(
+                            onTap: () {
+                              Get.toNamed('/chat');
+                            },
+                            leading: CircleAvatar(
+                              backgroundImage: NetworkImage(user.image),
+                            ),
+                            title: Text(user.name),
+                            subtitle: Text(user.lastMessage),
+                            trailing: Text(user.time),
                           ),
-                          title: Text(user.name),
-                          subtitle: Text(user.lastMessage),
-                          trailing: Text(user.time),
                         );
                       });
                 } else {

@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_whatsapp_clone/Core/Constants/colors.dart';
 
 class MyAppBar extends StatefulWidget implements PreferredSizeWidget {
   final double height;
@@ -36,6 +38,7 @@ class _MyAppBarState extends State<MyAppBar> {
   Widget build(BuildContext context) {
     return AppBar(
       toolbarHeight: 70,
+      backgroundColor: kPrimaryColor,
       title: _isSearching
           ? TextField(
               controller: _searchController,

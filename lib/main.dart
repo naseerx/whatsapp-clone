@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'UI/Screens/home_screen.dart';
+import 'package:flutter_whatsapp_clone/Core/Constants/colors.dart';
+import 'package:flutter_whatsapp_clone/Core/routes.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Whatsapp Clone',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: kScaffoldBackground
       ),
-      home: const HomeScreen(),
+      initialRoute: '/home',
+      getPages: appRoutes(),
     );
   }
 }
-
