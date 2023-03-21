@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CallsScreen extends StatelessWidget {
+   CallsScreen({super.key});
+
   final List<Map<String, dynamic>> callLog = [
     {
       'name': 'John Doe',
@@ -24,6 +26,7 @@ class CallsScreen extends StatelessWidget {
       'isMissed': false,
     },
   ];
+
 
   @override
   Widget build(BuildContext context) {

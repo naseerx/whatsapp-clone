@@ -5,17 +5,17 @@ class StatusScreen extends StatelessWidget {
     Status(
       name: 'John Doe',
       time: DateTime.now(),
-      imageUrl: 'https://picsum.photos/200/300',
+      imageUrl: 'https://picsum.photos/200/301',
     ),
     Status(
       name: 'Jane Smith',
       time: DateTime.now().subtract(const Duration(minutes: 30)),
-      imageUrl: 'https://picsum.photos/200/300',
+      imageUrl: 'https://picsum.photos/200/302',
     ),
     Status(
       name: 'Bob Johnson',
       time: DateTime.now().subtract(const Duration(hours: 1)),
-      imageUrl: 'https://picsum.photos/200/300',
+      imageUrl: 'https://picsum.photos/200/304',
     ),
     // add more statuses here
   ];
@@ -45,7 +45,7 @@ class StatusScreen extends StatelessWidget {
       leading: Stack(
         children: [
           const CircleAvatar(
-            backgroundImage: NetworkImage('https://picsum.photos/200/300'),
+            backgroundImage: NetworkImage('https://picsum.photos/200/306'),
             radius: 25,
           ),
           Positioned(

@@ -20,7 +20,79 @@
     },
     {
       "name": "Alice Williams",
+      "image": "https://randomuser.me/api/portraits/women/8.jpg",
+      "lastMessage": "What's up?",
+      "time": "3 days ago"
+    },
+    {
+      "name": "Mike Brown",
+      "image": "https://randomuser.me/api/portraits/men/5.jpg",
+      "lastMessage": "I'm running late",
+      "time": "4 days ago"
+    },
+    {
+      "name": "Sarah Lee",
+      "image": "https://randomuser.me/api/portraits/women/6.jpg",
+      "lastMessage": "Thanks for your help",
+      "time": "Last week"
+    },
+    {
+      "name": "John Doe",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "lastMessage": "Hey, how's it going?",
+      "time": "10:30 AM"
+    },
+    {
+      "name": "Jane Smith",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "lastMessage": "Can you send me that file?",
+      "time": "Yesterday"
+    },
+    {
+      "name": "Bob Johnson",
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "lastMessage": "See you later!",
+      "time": "2 days ago"
+    },
+    {
+      "name": "Alice Williams",
       "image": "https://randomuser.me/api/portraits/women/4.jpg",
+      "lastMessage": "What's up?",
+      "time": "3 days ago"
+    },
+    {
+      "name": "Mike Brown",
+      "image": "https://randomuser.me/api/portraits/men/5.jpg",
+      "lastMessage": "I'm running late",
+      "time": "4 days ago"
+    },
+    {
+      "name": "Sarah Lee",
+      "image": "https://randomuser.me/api/portraits/women/6.jpg",
+      "lastMessage": "Thanks for your help",
+      "time": "Last week"
+    },
+    {
+      "name": "John Doe",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "lastMessage": "Hey, how's it going?",
+      "time": "10:30 AM"
+    },
+    {
+      "name": "Jane Smith",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "lastMessage": "Can you send me that file?",
+      "time": "Yesterday"
+    },
+    {
+      "name": "Bob Johnson",
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "lastMessage": "See you later!",
+      "time": "2 days ago"
+    },
+    {
+      "name": "Alice Williams",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
       "lastMessage": "What's up?",
       "time": "3 days ago"
     },
