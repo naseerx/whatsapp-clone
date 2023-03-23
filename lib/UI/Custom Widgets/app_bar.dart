@@ -1,6 +1,6 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/Core/Constants/colors.dart';
+import 'package:flutter_whatsapp_clone/Core/Constants/strings.dart';
 
 class MyAppBar extends StatefulWidget implements PreferredSizeWidget {
   final double height;
@@ -23,9 +23,9 @@ class _MyAppBarState extends State<MyAppBar> {
   bool _isSearching = false;
   late TextEditingController _searchController;
   final List<Tab> _tabs = [
-    const Tab(text: 'Chats'),
-    const Tab(text: 'Status'),
-    const Tab(text: 'Calls'),
+    const Tab(text: chat),
+    const Tab(text: status),
+    const Tab(text: call),
   ];
 
   @override
