@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-class StatusScreen extends StatelessWidget {
+class StatusScreen extends StatefulWidget {
+  const StatusScreen({super.key});
+
+  @override
+  State<StatusScreen> createState() => _StatusScreenState();
+}
+
+class _StatusScreenState extends State<StatusScreen> {
   final List<Status> statuses = [
     Status(
       name: 'John Doe',
@@ -19,24 +26,27 @@ class StatusScreen extends StatelessWidget {
     ),
     // add more statuses here
   ];
+
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: statuses.length + 1,
-      itemBuilder: (BuildContext context, int index) {
-        if (index == 0) {
-          return _buildMyStatusTile();
-        } else {
-          final status = statuses[index - 1];
-          return ListTile(
-            leading: CircleAvatar(
-              backgroundImage: NetworkImage(status.imageUrl),
-            ),
-            title: Text(status.name),
-            subtitle: Text(_getStatusTime(status.time)),
-          );
-        }
-      },
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: statuses.length + 1,
+        itemBuilder: (BuildContext context, int index) {
+          if (index == 0) {
+            return _buildMyStatusTile();
+          } else {
+            final status = statuses[index - 1];
+            return ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(status.imageUrl),
+              ),
+              title: Text(status.name),
+              subtitle: Text(_getStatusTime(status.time)),
+            );
+          }
+        },
+      ),
     );
   }
 

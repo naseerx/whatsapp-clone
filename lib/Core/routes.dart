@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_whatsapp_clone/UI/Screens/chat_screen.dart';
-import 'package:flutter_whatsapp_clone/UI/Screens/home_screen.dart';
+import 'package:flutter_whatsapp_clone/UI/Screens/dashboard_screen.dart';
 import 'package:get/get.dart';
 
 appRoutes() => [
       GetPage(
         name: '/home',
-        page: () => const HomeScreen(),
+        page: () => const DashboardScreen(),
         transition: Transition.leftToRightWithFade,
         transitionDuration: const Duration(milliseconds: 500),
       ),
